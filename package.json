@@ -1,0 +1,46 @@
+{
+	"name": "directus-extension-collection-selector",
+	"description": "This extension enables effortlessly selecting the collections directly from the database within the Directus interface.",
+	"license": "gpl-3.0",
+	"author": {
+		"name": "Omkar Dedge",
+		"email": "hello@omkardedge.com",
+		"url": "https://omkardedge.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/omkardedge011/directus-extension-collection-selector.git"
+	},
+	"bugs": {
+		"url": "https://github.com/omkardedge011/directus-extension-collection-selector/issues"
+	},
+	"homepage": "https://github.com/omkardedge011/directus-extension-collection-selector",
+	"icon": "extension",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-interface",
+		"collection-selector"
+	],
+	"files": [
+		"dist"
+	],
+	"type": "commonjs",
+	"directus:extension": {
+		"type": "interface",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^10.3.4"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "10.3.4",
+		"typescript": "^5.3.3",
+		"vue": "^3.4.20"
+	}
+}
